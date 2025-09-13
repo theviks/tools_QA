@@ -1,0 +1,9 @@
+2025-09-10 18:01:33 INFO  TC_E1:14 - *** Starting TC-E1 ***
+2025-09-10 18:01:33 INFO  TC_E1:18 - *** clicking elements on Home page ***
+2025-09-10 18:01:34 INFO  TC_E1:23 - *** Selecting TextBox ***
+2025-09-10 18:01:37 INFO  TC_E1:32 - *** Verifying Submition ***
+2025-09-10 18:01:37 INFO  TC_E1:37 - *** Testing for TC_E1 Completed 
+2025-09-10 18:19:34 INFO  TC_E2:14 - *** Starting TC_E2 ***
+2025-09-10 18:37:45 INFO  TC_E3:15 - *** Starting TC_E3 ***
+2025-09-10 18:37:46 INFO  TC_E3:24 - *** Verifying Radio Button Selection ***
+2025-09-10 18:37:46 INFO  TC_E3:27 - *** Completed Testing for TC_E3

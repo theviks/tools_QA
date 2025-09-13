@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Properties>
+        <Property name="log-path">./logs</Property>
+        <Property name="log-pattern">%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n</Property>
+    </Properties>
+    
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${log-pattern}"/>
+        </Console>
+
+        <!-- Log file will always be saved with date+time in the name -->
+        <RollingFile 
+            name="File" 
+            fileName="${log-path}/automation.log"
+            filePattern="${log-path}/automation-%i.log.gz">
+
+            <PatternLayout pattern="${log-pattern}"/>
+
+            <Policies>
+                <SizeBasedTriggeringPolicy size="1MB"/>
+            </Policies>
+
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="all">
+            <!--<AppenderRef ref="Console"/>-->
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</Configuration>
