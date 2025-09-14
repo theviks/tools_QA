@@ -7,3 +7,6 @@
 2025-09-10 18:37:45 INFO  TC_E3:15 - *** Starting TC_E3 ***
 2025-09-10 18:37:46 INFO  TC_E3:24 - *** Verifying Radio Button Selection ***
 2025-09-10 18:37:46 INFO  TC_E3:27 - *** Completed Testing for TC_E3
+2025-09-14 02:27:38 INFO  TC_E4:15 - *** Starting Test TC_E4 ***
+2025-09-14 02:27:42 INFO  TC_E4:30 - *** Verifying for TC_E4 Success ***
+2025-09-14 02:27:42 INFO  TC_E4:35 - *** Testing for TC_E4 Completed ***
