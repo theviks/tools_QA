@@ -5,12 +5,13 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_E4">
+      <class name="testCases.TC_A1">
         <methods>
+          <include name="tearDown"/>
+          <include name="alertTesting"/>
           <include name="setUp"/>
-          <include name="formsPages"/>
         </methods>
-      </class> <!-- testCases.TC_E4 -->
+      </class> <!-- testCases.TC_A1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

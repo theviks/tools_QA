@@ -14,7 +14,8 @@
       <!--  <class name="testCases.TC_E1"/> -->
       <!-- <class name="testCases.TC_E2"/>   --> 
       <!--  <class name="testCases.TC_E3"/> -->
-      <class name="testCases.TC_E4"/>		
+      <!--<class name="testCases.TC_F1"/>-->
+      <class name="testCases.TC_A1"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

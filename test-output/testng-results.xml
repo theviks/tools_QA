@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-14T02:27:33 GMT-04:00" name="Suite" finished-at="2025-09-14T02:27:42 GMT-04:00" duration-ms="8427">
+  <suite started-at="2025-09-15T00:34:11 GMT-04:00" name="Suite" finished-at="2025-09-15T00:34:32 GMT-04:00" duration-ms="20798">
     <groups>
     </groups>
-    <test started-at="2025-09-14T02:27:33 GMT-04:00" name="Test" finished-at="2025-09-14T02:27:42 GMT-04:00" duration-ms="8427">
-      <class name="testCases.TC_E4">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_E4@233795b6]" started-at="2025-09-14T02:27:33 GMT-04:00" name="setUp" finished-at="2025-09-14T02:27:37 GMT-04:00" duration-ms="4116" status="PASS">
+    <test started-at="2025-09-15T00:34:11 GMT-04:00" name="Test" finished-at="2025-09-15T00:34:32 GMT-04:00" duration-ms="20798">
+      <class name="testCases.TC_A1">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_A1@5bda8e08]" started-at="2025-09-15T00:34:11 GMT-04:00" name="setUp" finished-at="2025-09-15T00:34:31 GMT-04:00" duration-ms="19854" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="formsPages()[pri:0, instance:testCases.TC_E4@233795b6]" started-at="2025-09-14T02:27:37 GMT-04:00" name="formsPages" finished-at="2025-09-14T02:27:42 GMT-04:00" duration-ms="4232" status="PASS">
+        <test-method signature="alertTesting()[pri:0, instance:testCases.TC_A1@5bda8e08]" started-at="2025-09-15T00:34:31 GMT-04:00" name="alertTesting" finished-at="2025-09-15T00:34:31 GMT-04:00" duration-ms="565" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- formsPages -->
-      </class> <!-- testCases.TC_E4 -->
+        </test-method> <!-- alertTesting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_A1@5bda8e08]" started-at="2025-09-15T00:34:31 GMT-04:00" name="tearDown" finished-at="2025-09-15T00:34:32 GMT-04:00" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_A1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

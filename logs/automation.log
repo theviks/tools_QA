@@ -10,3 +10,9 @@
 2025-09-14 02:27:38 INFO  TC_E4:15 - *** Starting Test TC_E4 ***
 2025-09-14 02:27:42 INFO  TC_E4:30 - *** Verifying for TC_E4 Success ***
 2025-09-14 02:27:42 INFO  TC_E4:35 - *** Testing for TC_E4 Completed ***
+2025-09-14 23:53:46 INFO  TC_F1:15 - *** Starting Test TC_E4 ***
+2025-09-14 23:53:50 INFO  TC_F1:30 - *** Verifying for TC_E4 Success ***
+2025-09-14 23:53:50 INFO  TC_F1:35 - *** Testing for TC_E4 Completed ***
+2025-09-15 00:34:31 INFO  TC_A1:15 - *** Starting TC_A1 ***
+2025-09-15 00:34:31 INFO  TC_A1:26 - *** Verification TC_A1 alert appers with correct message ***
+2025-09-15 00:34:31 INFO  TC_A1:33 - *** Testing for TC_A1 Completed ***

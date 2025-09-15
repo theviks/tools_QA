@@ -43,7 +43,8 @@ public class FormsPages extends BasePage {
 	@FindBy(xpath="//button[@id='submit']") WebElement btnSubmit;
 	@FindBy(xpath="//div[@class='modal-header']") WebElement verify;
 
-
+	public JavascriptExecutor js = (JavascriptExecutor) driver;
+	
 	public void selectPractice() {
 		formPractice.click();
 	}
@@ -59,7 +60,7 @@ public class FormsPages extends BasePage {
 	
 //Gender 
 	public void gender() {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
 		js.executeScript("arguments[0].scrollIntoView();", radMale);
 		radMale.click();
 	}
@@ -111,7 +112,6 @@ public class FormsPages extends BasePage {
 //Address	
 	public void address(String address,String stateName,String cityName) {
 		
-		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", currAdd);
 		
 		currAdd.sendKeys(address);
@@ -138,12 +138,12 @@ public class FormsPages extends BasePage {
 
 	
 	public void submit() {
+		js.executeScript("argument[0].scrollIntoView();", btnSubmit);
 		btnSubmit.click();
 	}
 	
 	public boolean verifySubmition() {
 		return verify.isDisplayed();
 	}
-	
 	
 }
