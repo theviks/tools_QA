@@ -22,7 +22,7 @@ public class AlertsPage extends BasePage {
 	
 	//Frames
 	@FindBy(xpath="//span[normalize-space()='Frames']") WebElement frames;
-	@FindBy(xpath="//div[@id='framesWrapper']") WebElement frame1;
+	@FindBy(xpath="//div[@id='framesWrapper']//div[@id='frame1Wrapper']/iframe") WebElement frame1;
 	@FindBy(xpath="//h1[@id='sampleHeading']") WebElement framesResult;
 	
 	
@@ -55,11 +55,13 @@ public class AlertsPage extends BasePage {
 	
 	//Frames
 	public void switchToFrame() {
+		js.executeScript("arguments[0].scrollIntoView();", frames);
 		frames.click();
-//		driver.switchTo().frame(frame1);
+		driver.switchTo().frame(frame1);
 	}
 	
 	public String resultFrames() {
+		
 		return framesResult.getText();
 	}
 	

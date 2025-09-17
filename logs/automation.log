@@ -22,3 +22,6 @@
 2025-09-15 19:56:31 INFO  TC_A3:15 - *** Starting TC_A2 ***
 2025-09-15 19:56:31 INFO  TC_A3:29 - *** Verification for TC_A2 ***
 2025-09-15 19:56:31 INFO  TC_A3:34 - *** Testing Completed for TC_A2 ***
+2025-09-17 10:00:15 INFO  TC_A4:14 - *** Testing started for TC_A4 ***
+2025-09-17 10:00:16 INFO  TC_A4:23 - *** Verification for TC_A4 ***
+2025-09-17 10:00:16 INFO  TC_A4:28 - *** Testing completed for TC_A4 ***
