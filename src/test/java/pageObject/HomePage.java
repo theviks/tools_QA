@@ -17,6 +17,7 @@ public class HomePage extends BasePage {
 	
 	@FindBy(xpath="//h5[normalize-space()='Alerts, Frame & Windows']") WebElement alerts;
 	
+	
 	public JavascriptExecutor js = (JavascriptExecutor) driver;
 	
 	public void clickElement() {

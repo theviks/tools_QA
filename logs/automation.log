@@ -16,3 +16,9 @@
 2025-09-15 00:34:31 INFO  TC_A1:15 - *** Starting TC_A1 ***
 2025-09-15 00:34:31 INFO  TC_A1:26 - *** Verification TC_A1 alert appers with correct message ***
 2025-09-15 00:34:31 INFO  TC_A1:33 - *** Testing for TC_A1 Completed ***
+2025-09-15 19:52:12 INFO  TC_A2:15 - *** Starting TC_A2 ***
+2025-09-15 19:52:12 INFO  TC_A2:27 - *** Verification for TC_A2 ***
+2025-09-15 19:52:12 INFO  TC_A2:32 - *** Testing Completed for TC_A2 ***
+2025-09-15 19:56:31 INFO  TC_A3:15 - *** Starting TC_A2 ***
+2025-09-15 19:56:31 INFO  TC_A3:29 - *** Verification for TC_A2 ***
+2025-09-15 19:56:31 INFO  TC_A3:34 - *** Testing Completed for TC_A2 ***
