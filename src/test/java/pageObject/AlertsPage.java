@@ -1,5 +1,7 @@
 package pageObject;
 
+import java.util.Set;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,6 +27,11 @@ public class AlertsPage extends BasePage {
 	@FindBy(xpath="//div[@id='framesWrapper']//div[@id='frame1Wrapper']/iframe") WebElement frame1;
 	@FindBy(xpath="//h1[@id='sampleHeading']") WebElement framesResult;
 	
+	// New Window
+	@FindBy(xpath="//span[normalize-space()='Browser Windows']") WebElement selectBrowserWindows;
+	@FindBy(xpath="//button[@id='windowButton']") WebElement newWindows;
+	@FindBy(xpath="//h1[@id='sampleHeading']") WebElement verifyText;
+ 	
 	
 	public JavascriptExecutor js = (JavascriptExecutor) driver;
 	
@@ -64,6 +71,31 @@ public class AlertsPage extends BasePage {
 		
 		return framesResult.getText();
 	}
+	
+	//Windows
+	public void selectWindows() {
+		js.executeScript("arguments[0].scrollIntoView();", selectBrowserWindows);
+		selectBrowserWindows.click();	
+	}
+	
+	public void clickNewWindows() {
+		newWindows.click();
+		
+		String parentWindow = driver.getWindowHandle();
+		Set<String> allWindows = driver.getWindowHandles();
+		
+		for (String windowHandle : allWindows) {
+		    if (!windowHandle.equals(parentWindow)) {
+		        driver.switchTo().window(windowHandle);
+		        break;
+		    }
+		}
+	}
+	
+	public String verifyWindows() {
+		return verifyText.getText();
+	}
+
 	
 	
 }
