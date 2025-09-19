@@ -17,6 +17,8 @@ public class HomePage extends BasePage {
 	
 	@FindBy(xpath="//h5[normalize-space()='Alerts, Frame & Windows']") WebElement alerts;
 	
+	@FindBy(xpath="//h5[normalize-space()='Widgets']") WebElement widgets;
+	
 	
 	public JavascriptExecutor js = (JavascriptExecutor) driver;
 	
@@ -31,5 +33,10 @@ public class HomePage extends BasePage {
 	public void clickAlert() {
 		js.executeScript("arguments[0].scrollIntoView();", alerts);
 		alerts.click();
+	}
+	
+	public void clickWidge() {
+		js.executeScript("arguments[0].scrollIntoView();", widgets);
+		widgets.click();
 	}
 }
