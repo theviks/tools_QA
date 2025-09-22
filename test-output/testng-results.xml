@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-21T23:43:44 GMT-04:00" name="Suite" finished-at="2025-09-21T23:43:55 GMT-04:00" duration-ms="10139">
+  <suite started-at="2025-09-21T23:52:42 GMT-04:00" name="Suite" finished-at="2025-09-21T23:52:55 GMT-04:00" duration-ms="13238">
     <groups>
     </groups>
-    <test started-at="2025-09-21T23:43:44 GMT-04:00" name="Test" finished-at="2025-09-21T23:43:55 GMT-04:00" duration-ms="10139">
+    <test started-at="2025-09-21T23:52:42 GMT-04:00" name="Test" finished-at="2025-09-21T23:52:55 GMT-04:00" duration-ms="13238">
       <class name="testCases.TC_W2">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_W2@1e800aaa]" started-at="2025-09-21T23:43:45 GMT-04:00" name="setUp" finished-at="2025-09-21T23:43:52 GMT-04:00" duration-ms="7723" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_W2@1e800aaa]" started-at="2025-09-21T23:52:42 GMT-04:00" name="setUp" finished-at="2025-09-21T23:52:50 GMT-04:00" duration-ms="8091" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="sliderAction()[pri:0, instance:testCases.TC_W2@1e800aaa]" started-at="2025-09-21T23:43:52 GMT-04:00" name="sliderAction" finished-at="2025-09-21T23:43:54 GMT-04:00" duration-ms="1702" status="PASS">
+        <test-method signature="sliderAction()[pri:0, instance:testCases.TC_W2@1e800aaa]" started-at="2025-09-21T23:52:50 GMT-04:00" name="sliderAction" finished-at="2025-09-21T23:52:54 GMT-04:00" duration-ms="3939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sliderAction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_W2@1e800aaa]" started-at="2025-09-21T23:43:54 GMT-04:00" name="tearDown" finished-at="2025-09-21T23:43:55 GMT-04:00" duration-ms="570" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_W2@1e800aaa]" started-at="2025-09-21T23:52:54 GMT-04:00" name="tearDown" finished-at="2025-09-21T23:52:55 GMT-04:00" duration-ms="1027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

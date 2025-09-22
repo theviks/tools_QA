@@ -175,7 +175,9 @@ public class WidgetsPage extends BasePage {
 	};
 	
 	public void moveSlider() {
-	    act.dragAndDropBy(slider, 150, 0).perform();
+	    int width = slider.getSize().width;
+	    act.dragAndDropBy(slider, width / 2, 0).perform(); // move to ~50%
+
 	    System.out.println(value.getAttribute("value"));
 	}
 	
