@@ -1,5 +1,7 @@
 package pageObject;
 
+import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -7,18 +9,22 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WidgetsPage extends BasePage {
 
 	 private JavascriptExecutor js;
 	 private Actions act; 
+	 private WebDriverWait mywait;
 	
 	public WidgetsPage(WebDriver driver) {
 		super(driver);
 		 this.driver = driver;
 	     this.js = (JavascriptExecutor) driver;
 	     this.act = new Actions(driver);
+	     this.mywait = new WebDriverWait(driver,Duration.ofSeconds(10));
 	}
 	
 	/*-------------------------------------------------------Date and Time Picker ------------------------------------------------------------------------*/
@@ -180,10 +186,54 @@ public class WidgetsPage extends BasePage {
 
 	    System.out.println(value.getAttribute("value"));
 	}
+/*----------------------------------------------------------------VerifyAutoComplete----------------------------------------------------------------------------*/	
+	@FindBy(xpath="//span[normalize-space()='Auto Complete']") WebElement autoComplete;
+	@FindBy(xpath="//input[@id='autoCompleteMultipleInput']") WebElement input1;
+	@FindBy(xpath="//div[@class='auto-complete__menu-list auto-complete__menu-list--is-multi css-11unzgr']/div") List<WebElement> options;
+	@FindBy(xpath="//div[contains(@class,'css-1pahdxg-control')]//div[contains(@class,'css-12jo7m5 auto-complete')]") List<WebElement> verifyAutoComplete;
 	
+	public void clickAutoComplete() {
+		autoComplete.click();
+	}
 	
+	public void inputs(String[] color) {
+		for(int i=0;i<color.length;i++) {
+		input1.sendKeys(color[i]);
+		for(WebElement colors : options) {
+			if(colors.getText().equalsIgnoreCase(color[i])) {
+				js.executeScript("arguments[0].scrollIntoView();", colors);
+				colors.click();
+				break;
+			}
+		 }
+		}
+	}
 	
+	public List<String> verifyAutoComp() {
+	    List<String> colors = new ArrayList<>();
+	    for (WebElement vf : verifyAutoComplete) {
+	        colors.add(vf.getText());
+	    }
+	    return colors;
+	}
 	
+/*----------------------------------------------------------------------ProgressBar----------------------------------------------------------------------------*/	
+	@FindBy(xpath="//span[normalize-space()='Progress Bar']") WebElement progressBar;
+	@FindBy(xpath="//button[@id='startStopButton']") WebElement startBtn;
+	@FindBy(xpath="//div[@role='progressbar']") WebElement pbValue;
+	
+	public void clickPgBar() {
+		progressBar.click();	
+	}
+	
+	public void clickStart() {
+		startBtn.click();
+		mywait.until(ExpectedConditions.textToBePresentInElement(pbValue, "100%"));
+	}
+	
+	public String verifyPb() {
+		return pbValue.getText();
+	}
 	
 	
 }

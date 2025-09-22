@@ -2,10 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-<!--  <listeners>
+<listeners>
 		<listener class-name="utilities.ExtentReportManager"/>
 </listeners> 
--->
+
 
   <test thread-count="5" name="Test">
   <parameter name="os" value="Windows"/>
@@ -21,7 +21,9 @@
       <!--  <class name="testCases.TC_A4"/> -->
       <!--  <class name="testCases.TC_A5"/> -->
       <!--  <class name="testCases.TC_W1"/> -->
-      <class name="testCases.TC_W2"/>
+      <!--  <class name="testCases.TC_W2"/> -->
+      <class name="testCases.TC_W3"/>
+      <!--  <class name="testCases.TC_W4"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
