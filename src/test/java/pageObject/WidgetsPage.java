@@ -5,19 +5,23 @@ import java.util.List;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 public class WidgetsPage extends BasePage {
 
 	 private JavascriptExecutor js;
+	 private Actions act; 
 	
 	public WidgetsPage(WebDriver driver) {
 		super(driver);
 		 this.driver = driver;
 	     this.js = (JavascriptExecutor) driver;
+	     this.act = new Actions(driver);
 	}
 	
+	/*-------------------------------------------------------Date and Time Picker ------------------------------------------------------------------------*/
 	void selectYearFuture(int myYear) {
         String targetYear = String.valueOf(myYear);
 
@@ -161,5 +165,23 @@ public class WidgetsPage extends BasePage {
 		
 		
 	}
+	/*--------------------------------------------------------------------Slider-----------------------------------------------------------------------------*/
+	@FindBy(xpath="//span[normalize-space()='Slider']") WebElement slider;
+	@FindBy(xpath="//input[@type='range']") WebElement sliderBar;
+	@FindBy(xpath="//input[@id='sliderValue']") WebElement value;
+	
+	public void clickSlide() {
+		slider.click();
+	};
+	
+	public void moveSlider() {
+	    act.dragAndDropBy(slider, 150, 0).perform();
+	    System.out.println(value.getAttribute("value"));
+	}
+	
+	
+	
+	
+	
 	
 }
