@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-22T18:20:09 GMT-04:00" name="Suite" finished-at="2025-09-22T18:20:18 GMT-04:00" duration-ms="8277">
+  <suite started-at="2025-09-24T21:14:12 GMT-04:00" name=" Master Suite" finished-at="2025-09-24T21:16:15 GMT-04:00" duration-ms="122499">
     <groups>
     </groups>
-    <test started-at="2025-09-22T18:20:09 GMT-04:00" name="Test" finished-at="2025-09-22T18:20:18 GMT-04:00" duration-ms="8277">
-      <class name="testCases.TC_W3">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_W3@185a6e9]" started-at="2025-09-22T18:20:10 GMT-04:00" name="setUp" finished-at="2025-09-22T18:20:14 GMT-04:00" duration-ms="4175" status="PASS">
+    <test started-at="2025-09-24T21:14:12 GMT-04:00" name="chromeTest" finished-at="2025-09-24T21:15:02 GMT-04:00" duration-ms="50145">
+      <class name="testCases.TC_W4">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_W4@489115ef]" started-at="2025-09-24T21:14:41 GMT-04:00" name="setUp" finished-at="2025-09-24T21:14:48 GMT-04:00" duration-ms="7396" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Windows]]>
+                <![CDATA[Linux]]>
               </value>
             </param>
             <param index="1">
@@ -23,15 +23,173 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="autoComplete()[pri:0, instance:testCases.TC_W3@185a6e9]" started-at="2025-09-22T18:20:14 GMT-04:00" name="autoComplete" finished-at="2025-09-22T18:20:17 GMT-04:00" duration-ms="3246" status="PASS">
+        <test-method signature="progressBar()[pri:0, instance:testCases.TC_W4@489115ef]" started-at="2025-09-24T21:14:48 GMT-04:00" name="progressBar" finished-at="2025-09-24T21:15:02 GMT-04:00" duration-ms="13762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- progressBar -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_W4@489115ef]" started-at="2025-09-24T21:15:02 GMT-04:00" name="tearDown" finished-at="2025-09-24T21:15:02 GMT-04:00" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_W4 -->
+      <class name="testCases.TC_W1">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_W1@1fa121e2]" started-at="2025-09-24T21:14:13 GMT-04:00" name="setUp" finished-at="2025-09-24T21:14:22 GMT-04:00" duration-ms="9295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="datePicker()[pri:0, instance:testCases.TC_W1@1fa121e2]" started-at="2025-09-24T21:14:22 GMT-04:00" name="datePicker" finished-at="2025-09-24T21:14:23 GMT-04:00" duration-ms="770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datePicker -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_W1@1fa121e2]" started-at="2025-09-24T21:14:23 GMT-04:00" name="tearDown" finished-at="2025-09-24T21:14:23 GMT-04:00" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_W1 -->
+      <class name="testCases.TC_W3">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_W3@15de0b3c]" started-at="2025-09-24T21:14:29 GMT-04:00" name="setUp" finished-at="2025-09-24T21:14:36 GMT-04:00" duration-ms="7421" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="autoComplete()[pri:0, instance:testCases.TC_W3@15de0b3c]" started-at="2025-09-24T21:14:36 GMT-04:00" name="autoComplete" finished-at="2025-09-24T21:14:41 GMT-04:00" duration-ms="4627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- autoComplete -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_W3@185a6e9]" started-at="2025-09-22T18:20:17 GMT-04:00" name="tearDown" finished-at="2025-09-22T18:20:18 GMT-04:00" duration-ms="376" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_W3@15de0b3c]" started-at="2025-09-24T21:14:41 GMT-04:00" name="tearDown" finished-at="2025-09-24T21:14:41 GMT-04:00" duration-ms="139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_W3 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      <class name="testCases.TC_W2">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_W2@1a677343]" started-at="2025-09-24T21:14:23 GMT-04:00" name="setUp" finished-at="2025-09-24T21:14:28 GMT-04:00" duration-ms="5219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="sliderAction()[pri:0, instance:testCases.TC_W2@1a677343]" started-at="2025-09-24T21:14:28 GMT-04:00" name="sliderAction" finished-at="2025-09-24T21:14:29 GMT-04:00" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sliderAction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_W2@1a677343]" started-at="2025-09-24T21:14:29 GMT-04:00" name="tearDown" finished-at="2025-09-24T21:14:29 GMT-04:00" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_W2 -->
+    </test> <!-- chromeTest -->
+    <test started-at="2025-09-24T21:15:05 GMT-04:00" name="firefoxTest" finished-at="2025-09-24T21:16:15 GMT-04:00" duration-ms="69979">
+      <class name="testCases.TC_W4">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_W4@bccb269]" started-at="2025-09-24T21:15:54 GMT-04:00" name="setUp" finished-at="2025-09-24T21:16:03 GMT-04:00" duration-ms="8719" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="progressBar()[pri:0, instance:testCases.TC_W4@bccb269]" started-at="2025-09-24T21:16:03 GMT-04:00" name="progressBar" finished-at="2025-09-24T21:16:14 GMT-04:00" duration-ms="10862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- progressBar -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_W4@bccb269]" started-at="2025-09-24T21:16:14 GMT-04:00" name="tearDown" finished-at="2025-09-24T21:16:15 GMT-04:00" duration-ms="974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_W4 -->
+      <class name="testCases.TC_W1">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_W1@6913c1fb]" started-at="2025-09-24T21:15:05 GMT-04:00" name="setUp" finished-at="2025-09-24T21:15:23 GMT-04:00" duration-ms="18448" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="datePicker()[pri:0, instance:testCases.TC_W1@6913c1fb]" started-at="2025-09-24T21:15:23 GMT-04:00" name="datePicker" finished-at="2025-09-24T21:15:36 GMT-04:00" duration-ms="12662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datePicker -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_W1@6913c1fb]" started-at="2025-09-24T21:15:36 GMT-04:00" name="tearDown" finished-at="2025-09-24T21:15:41 GMT-04:00" duration-ms="5023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_W1 -->
+      <class name="testCases.TC_W2">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_W2@66d18979]" started-at="2025-09-24T21:15:41 GMT-04:00" name="setUp" finished-at="2025-09-24T21:15:50 GMT-04:00" duration-ms="9383" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="sliderAction()[pri:0, instance:testCases.TC_W2@66d18979]" started-at="2025-09-24T21:15:50 GMT-04:00" name="sliderAction" finished-at="2025-09-24T21:15:53 GMT-04:00" duration-ms="2482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sliderAction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_W2@66d18979]" started-at="2025-09-24T21:15:53 GMT-04:00" name="tearDown" finished-at="2025-09-24T21:15:54 GMT-04:00" duration-ms="1396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_W2 -->
+    </test> <!-- firefoxTest -->
+  </suite> <!--  Master Suite -->
 </testng-results>
